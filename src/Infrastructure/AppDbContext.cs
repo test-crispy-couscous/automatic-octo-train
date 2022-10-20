@@ -1,7 +1,7 @@
-﻿using AspnetTemplate.Core.Models;
+﻿using AutomaticOctoTrain.Core.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspnetTemplate.Infrastructure;
+namespace AutomaticOctoTrain.Infrastructure;
 
 public class AppDbContext : DbContext
 {

@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace AspnetTemplate.Tests;
+namespace AutomaticOctoTrain.Tests;
 
 public class UnitTest1
 {

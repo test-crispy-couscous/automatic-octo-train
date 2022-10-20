@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "AspnetTemplate": {
+    "AutomaticOctoTrain": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

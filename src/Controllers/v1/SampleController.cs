@@ -1,9 +1,9 @@
-﻿using AspnetTemplate.Core.Models;
-using AspnetTemplate.Infrastructure;
+﻿using AutomaticOctoTrain.Core.Models;
+using AutomaticOctoTrain.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspnetTemplate.Controllers.v1;
+namespace AutomaticOctoTrain.Controllers.v1;
 
 [ApiVersion("1.0")]
 [ApiController]

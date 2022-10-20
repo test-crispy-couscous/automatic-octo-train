@@ -1,4 +1,4 @@
-﻿namespace AspnetTemplate.Core.Models;
+﻿namespace AutomaticOctoTrain.Core.Models;
 
 public class Sample : Entity
 {
