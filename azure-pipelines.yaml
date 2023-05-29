@@ -27,4 +27,4 @@ steps:
     echo "Linting commits..."
     commitlint --from $BASE_COMMIT --to $(Build.SourceVersion)]
   displayName: 'Lint commit messages'
-  condition: eq(variables['Build.Reason'], 'PullRequest')
+#  condition: eq(variables['Build.Reason'], 'PullRequest')
