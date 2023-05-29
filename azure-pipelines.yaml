@@ -1,6 +1,10 @@
 trigger:
   - main
   - develop
+  
+pr:
+  - main
+  - develop
 
 variables:
   - group: sonar-github-alternative
@@ -18,7 +22,7 @@ steps:
     npm install -g @commitlint/cli @commitlint/config-conventional
 
     echo "Getting base commit..."
-    BASE_COMMIT=$(git merge-base $(PullRequest.TargetBranch) $(Build.SourceBranchName))
+    BASE_COMMIT=$(git merge-base origin/$(System.PullRequest.TargetBranch) $(Build.SourceBranchName))
 
     echo "Linting commits..."
     commitlint --from $BASE_COMMIT --to $(Build.SourceVersion)]
