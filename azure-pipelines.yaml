@@ -22,9 +22,9 @@ steps:
     npm install -g @commitlint/cli @commitlint/config-conventional
 
     echo "Getting base commit..."
-    BASE_COMMIT=$(git merge-base $(System.PullRequest.TargetBranch) $(Build.SourceBranchName))
+    BASE_COMMIT=$(git merge-base origin/$(System.PullRequest.TargetBranch) $(Build.SourceBranchName))
 
     echo "Linting commits..."
     commitlint --from $BASE_COMMIT --to $(Build.SourceVersion)]
   displayName: 'Lint commit messages'
-#  condition: eq(variables['Build.Reason'], 'PullRequest')
+  condition: eq(variables['Build.Reason'], 'PullRequest')
